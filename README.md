@@ -31,3 +31,11 @@ $ cargo run
 $ dd if=target/x86_64-my-os/debug/bootimage-my-os.bin of=/dev/sdX && sync
 ```
 Where sdX - the device name of your USB stick
+* For run tests
+```
+$ cargo test
+```
+* For run tests that should panic
+```
+$ cargo test --test should_panic
+```
