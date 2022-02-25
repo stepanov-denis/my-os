@@ -28,7 +28,7 @@ $ cargo run
 ```
 * Working on bare metal
 ```
-$ dd if=target/x86_64-my-os/debug/bootimage-my-os.bin of=/dev/sdX && sync
+$ sudo dd if=target/x86_64-my_os/debug/bootimage-my-os.bin of=/dev/sda1 && sync
 ```
 Where sdX - the device name of your USB stick
 * For run tests
